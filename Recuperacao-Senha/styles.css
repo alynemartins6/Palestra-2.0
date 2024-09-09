@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'poppins', sans-serif;
+    
+}
+
+body{
+    width: 100vw;
+    height: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(135, 197, 231);
+}
+
+.container{
+    background-color: whitesmoke;
+    padding: 10px;
+    width: 450px;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgb(95, 127, 158);
+}
+
+form{
+    position: absolute;
+    margin-top: 80px;
+    transition:  .6s;
+    width: 400px;
+    height: 450px;
+}
+
+.buttonsForm{
+    margin-top: 40px;
+    position: relative;
+    border-radius: 30px; 
+    box-shadow: 0 0 10px 0 rgb(35, 157, 238);
+}
+
+.buttonsForm button{
+    cursor:pointer;
+    background-color: transparent;
+    border:none;
+    position: relative;
+    padding: 10px 29px;
+}
+
+.btnColor{
+    position:absolute;
+    width: 170px;
+    height: 100%;
+    background-color:rgb(35, 157, 238);
+    border-radius: 30px;
+    transition: .3s;
+}
+
+input[type="text"] , input[type="password2"],  input[type="password3"],input[type="number"] {
+    border: none;
+    margin-top: 50px;
+    border-radius: 60px;
+    padding: 8px 0 8px 35px;
+    width: 100%;
+    
+} 
+
+button[type="submit"] {
+    background: rgb(35, 157, 238);
+    color: white;
+    border-radius: 30px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 8px 0 8px 15px;
+    font-size: 15px;
+    margin-top:80px;
+    cursor: pointer;
+}
+
+.divCheck{
+    margin: 10px 0 0 5px;
+    width: 80%;
+    font-size: 13px;
+    padding-top: 15px;
+    margin-top: 10px;
+}
+
+.iEmail{
+    top:50px;
+    position: absolute;
+    left: 0;
+    padding: 10px 10px;
+  
+}
+.redefinicao{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+.iCodigo{
+    top: 150px;
+    position:absolute;
+    left: 0;
+    padding: 10px 10px;
+}
+
+.paragrafo-codigo{
+    margin-top: 80px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.iPassword2{
+    top: 50px;
+    position:absolute;
+    left: 0;
+    padding: 10px 10px;
+}
+.iPassword3{
+    top: 180px;
+    position:absolute;
+    left: 0;
+    padding: 10px 10px;
+}
+.helpblock{
+    font-size: 10px;
+    color: rgb(13, 124, 222);
+    text-align: center;
+    margin-top: 10px;
+}
