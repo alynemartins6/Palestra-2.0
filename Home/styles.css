@@ -47,16 +47,13 @@ section {
 
 .btn-default {
     border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: rgb(35, 157, 238);
     border-radius: 12px;
     padding: 10px 14px;
-    font-weight: 600;
+    font-weight: 400;
     text-decoration: none;
     color: white;
-    box-shadow: 0px 0px 10px 2px #033b70;
+    box-shadow: 0px 0px 5px 1px #033b70;
     cursor: pointer;
 }
 
@@ -66,7 +63,7 @@ section {
 }
 
 #banner {
-    width: 50%;
+    width: 60%;
     margin: 0px 0px 0px 300px;
 }
 
@@ -83,7 +80,7 @@ section {
 }
 
 #cta .title {
-    font-size: 3.2rem;
+    font-size: 4rem;
     color: #033b70;
 
 }
@@ -93,7 +90,7 @@ section {
 }
 
 #cta .description {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
 }
 
 #cta_buttons {
@@ -102,65 +99,52 @@ section {
 }
 
 #cta_buttons a {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 #lecture {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    margin-top: 200px;
     align-items: center;
     justify-content: center;
-    min-height: 50vh;
 }
 
 .section-title {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 4rem;
     color: #033b70;
 }
 
 #themes {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-    margin-top: 32px;
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  
+    margin-top: 100px;
+    gap:20px;
 }
+
+.theme{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: left;    
+}
+
 .theme img {
-    width: 450px;
-    height: 300px;
+    width: 430px;
+    height: 310px;
+    border-radius: 10px;
 }
 
 .theme-title {
-    font-size: 15px;
+    font-size: 14px;
+    margin-top: 20px;
+    text-transform: uppercase;
 }
 
-.btn-signup1{
-    position: absolute;
-    margin-top: 10px;
-    left: 200px;
-}
-.btn-signup2{
-    position: absolute;
-    margin-top: 30px;
-    left: 660px;
-}
-.btn-signup3{
-    position: absolute;
-    margin-top: 30px;
-    left: 1150px;
-}
-.btn-signup4{
-    position: absolute;
-    margin-top: 30px;
-    left: 1620px;
-}
 #lecture_closed{
-    display: flex;
-    flex-direction: column;
+    display: grid;
     align-items: center;
     justify-content: center;
     min-height: 50vh;
-    margin-top: 50px;
+    margin-top: 150px;
 }
