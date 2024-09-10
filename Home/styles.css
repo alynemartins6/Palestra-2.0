@@ -118,20 +118,20 @@ section {
 #themes {
     display: grid;
     grid-template-columns: repeat(4, 1fr);  
-    margin-top: 100px;
-    gap:20px;
+    margin-top: 50px;
+    gap:30px;
 }
 
 .theme{
-    
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     align-items: left;    
 }
 
 .theme img {
-    width: 430px;
-    height: 310px;
+    width: 400px;
+    height: 290px;
     border-radius: 10px;
 }
 
@@ -147,4 +147,23 @@ section {
     justify-content: center;
     min-height: 50vh;
     margin-top: 150px;
+}
+
+#lecture-registered{
+    
+    display: grid;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.registered-title{
+    text-align: center;
+    font-size: 4rem;
+    color: #15548f;
+    margin-top: 0;
+}
+#registred-banner img {
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
 }

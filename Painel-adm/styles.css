@@ -15,9 +15,6 @@ header {
 section {
     padding: 28px 8%;
 }
-body {
-    
-}
 
 #navbar {
     width: 100%;
@@ -106,4 +103,10 @@ button[type="submit2"] {
     text-align: center;
     margin-top: 20px;
 }
+.signup-title{
+    font-size: 2rem;
+    color: rgb(62, 116, 178);
+    text-align: center;
+}
+
 
