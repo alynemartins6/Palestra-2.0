@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+header {
+    width: 100%;
+    padding: 28px 8%;
+}
+
+section {
+    padding: 28px 8%;
+}
+body {
+    
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    width: 100px;
+    height: 100px;
+}
+
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 100px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: rgb(35, 157, 238);
+
+}
+
+.nav-item.active a {
+    color: rgb(35, 157, 238);
+    border-bottom: 3px solid #203eab;
+}
+
+.container{
+   
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    padding: 70px;
+    background-color: rgb(196, 222, 241);
+    box-shadow: 0 0 10px 0 rgb(58, 129, 199);
+    border-radius: 10px;
+    margin-top: 80px;
+    transition: .6s;
+    width: 500px;
+    height: 550px;
+}
+
+
+input[type="text2"] , input[type="password2"],  input[type="password3"],input[type="number"]{
+    border: none;
+    margin-top: 50px;
+    border-radius: 60px;
+    padding: 8px 0 8px 35px;
+    width: 100%;
+    margin-top: 30px;
+    
+} 
+
+button[type="submit2"] {
+    background: rgb(35, 157, 238);
+    color: white;
+    border-radius: 30px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 8px 0 8px 15px;
+    font-size: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.divCheck{
+    margin: 10px 0 0 5px;
+    width: 80%;
+    font-size: 13px;
+    padding-top: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+   
+}
+.helpblock{
+    font-size: 10px;
+    color: rgb(13, 124, 222);
+    text-align: center;
+    margin-top: 20px;
+}
+

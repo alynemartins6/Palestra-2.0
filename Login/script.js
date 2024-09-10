@@ -16,6 +16,12 @@ document.querySelector('#btnSignup')
         btnColor.style.left = "110px"
 })
 
+function backToLogin() {
+    formSignin.style.left = "25px"
+    formSignup.style.left = "450px"
+    btnColor.style.left = "0px"
+}
+///////////////////////////////////////////
 
 const inputEmail = document.getElementById("inputEmail");
 const inputSenha = document.getElementById("inputSenha");
@@ -55,6 +61,7 @@ buttonEnviar.addEventListener("click", async (event) => {
 	}
 });
 
+/////////////////////////////////////////
 
 const inputNome = document.getElementById("inputNome");
 const inputMatricula = document.getElementById("inputMatricula");
@@ -84,7 +91,7 @@ buttonCadastrar.addEventListener("click", async (event) => {
 			})
 			if (result.status === 201) {
 				alert("Cadastro realizado com sucesso!");
-				document.location.href = "../Home/index.html"
+				backToLogin();
 			} else {
 				alert("Erro ao realizar cadastro." + result.status + " - " + result.statusText + " - " + result.body);
 			}
