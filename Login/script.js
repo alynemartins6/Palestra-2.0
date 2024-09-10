@@ -29,12 +29,7 @@ buttonEnviar.addEventListener("click", async (event) => {
 	if (inputEmail.value === "") {
 		alert("Por favor, preencha o campo de email.");
 		isValid = false;
-	}
-
-	if (inputSenha.value === "" || inputSenha.value.length < 8) {
-		alert("Por favor, preencha a senha com pelo menos 8 caracteres.");
-		isValid = false;
-	} else if (isValid) {
+	} else {
 		let body = new Object();
 		body.email = inputEmail.value;
 		body.pass = inputSenha.value;
