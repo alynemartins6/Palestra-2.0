@@ -84,7 +84,7 @@ buttonCadastrar.addEventListener("click", async (event) => {
 			})
 			if (result.status === 201) {
 				alert("Cadastro realizado com sucesso!");
-				window.location.href = "login.html";
+				document.location.href = "../Home/index.html"
 			} else {
 				alert("Erro ao realizar cadastro." + result.status + " - " + result.statusText + " - " + result.body);
 			}
