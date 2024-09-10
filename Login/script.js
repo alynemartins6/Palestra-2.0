@@ -50,7 +50,7 @@ buttonEnviar.addEventListener("click", async (event) => {
 				return data.accessToken;
 			})
 			.then((json) => alert("Login realizado com sucesso"))
-			.then(() => document.location.href = "pagina-principal.html")
+			.then(() => document.location.href = "../Home/index.html")
 			.catch((err) => alert("Falha ao realizar login: " + err));
 	}
 });
