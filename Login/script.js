@@ -24,8 +24,14 @@ function backToLogin() {
 ///////////////////////////////////////////
 
 const inputEmail = document.getElementById("inputEmail");
+const inputEmail2 = document.getElementById("inputEmail2");
 const inputSenha = document.getElementById("inputSenha");
+const inputSenha2 = document.getElementById("inputSenha2");
+const inputSenha3 = document.getElementById("inputSenha3");
 const buttonEnviar = document.getElementById("submit-enviar");
+const inputNome = document.getElementById("inputNome");
+const inputMatricula = document.getElementById("inputMatricula");
+const buttonCadastrar = document.getElementById("submit-cadastrar");
 
 buttonEnviar.addEventListener("click", async (event) => {
 	event.preventDefault();
@@ -39,7 +45,7 @@ buttonEnviar.addEventListener("click", async (event) => {
 		let body = new Object();
 		body.email = inputEmail.value;
 		body.pass = inputSenha.value;
-		await fetch("http://localhost:3000/auth/login", {
+		await fetch("http://localhost:3000/auth/login", { 
 			method: "POST",
 			headers: {
 				Accept: "*/*",
@@ -63,9 +69,7 @@ buttonEnviar.addEventListener("click", async (event) => {
 
 /////////////////////////////////////////
 
-const inputNome = document.getElementById("inputNome");
-const inputMatricula = document.getElementById("inputMatricula");
-const buttonCadastrar = document.getElementById("submit-cadastrar");
+
 
 buttonCadastrar.addEventListener("click", async (event) => {
 	event.preventDefault();
@@ -76,8 +80,10 @@ buttonCadastrar.addEventListener("click", async (event) => {
 		let formulario = new Object();
 		formulario.userName = inputNome.value;
 		formulario.registerID = inputMatricula.value;
-		formulario.email = inputEmail.value;
-		formulario.password = inputSenha.value;
+		formulario.email = inputEmail2.value;
+		formulario.password = inputSenha2.value;
+		formulario.password = inputSenha3.value;
+		formulario.workShops = [];
 		console.log("Formulário enviado com sucesso!" + JSON.stringify({ ...formulario }));
 
 		try {
@@ -103,26 +109,26 @@ buttonCadastrar.addEventListener("click", async (event) => {
 	function validateForm() {
 		let isValid = true;
 
-		if (inputNome.value === "") {
-			alert('O campo "Primeiro Nome" é obrigatório.');
-			isValid = false;
-		}
+		// if (inputNome.value === "") {
+		// 	alert('O campo "Primeiro Nome" é obrigatório.');
+		// 	isValid = false;
+		// }
 		
-		if (inputEmail.value === "") {
-			alert('O campo "Email" é obrigatório.');
-			isValid = false;
-		}
-		if (inputSenha.value === "") {
-			alert('O campo "Senha" é obrigatório.');
-			isValid = false;
-		} else if (inputSenha.value.length < 8) {
-			alert("A senha deve ter pelo menos 8 caracteres.");
-			isValid = false;
-		}
-		if (inputMatricula.value === "") {
-			alert('O campo "Matrícula" é obrigatório.');
-			isValid = false;
-		}
+		// if (inputEmail.value === "") {
+		// 	alert('O campo "Email" é obrigatório.');
+		// 	isValid = false;
+		// }
+		// if (inputSenha.value === "") {
+		// 	alert('O campo "Senha" é obrigatório.');
+		// 	isValid = false;
+		// } else if (inputSenha.value.length < 8) {
+		// 	alert("A senha deve ter pelo menos 8 caracteres.");
+		// 	isValid = false;
+		// }
+		// if (inputMatricula.value === "") {
+		// 	alert('O campo "Matrícula" é obrigatório.');
+		// 	isValid = false;
+		// }
 		
 		return isValid;
 	}

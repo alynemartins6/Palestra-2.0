@@ -42,7 +42,7 @@ section {
 
 .nav-item.active a {
     color: rgb(35, 157, 238);
-    border-bottom: 3px solid #203eab;
+    
 }
 
 .btn-default {
@@ -80,7 +80,7 @@ section {
 }
 
 #cta .title {
-    font-size: 4rem;
+    font-size: 5rem;
     color: #033b70;
 
 }
@@ -90,7 +90,7 @@ section {
 }
 
 #cta .description {
-    font-size: 1.7rem;
+    font-size: 2rem;
 }
 
 #cta_buttons {
@@ -98,13 +98,9 @@ section {
     gap: 40px;
 }
 
-#cta_buttons a {
-    margin-top: 30px;
-}
-
 #lecture {
     display: grid;
-    margin-top: 200px;
+    margin-top: 50px;
     align-items: center;
     justify-content: center;
 }
@@ -146,7 +142,7 @@ section {
     align-items: center;
     justify-content: center;
     min-height: 50vh;
-    margin-top: 150px;
+    margin-top: 50px;
 }
 
 #lecture-registered{
@@ -166,4 +162,16 @@ section {
     display: block;
     margin: 0 auto;
     max-width: 50%;
+}
+.theme-description{
+    font-size: 11px;
+    margin: 10px 0px 10px 0px;
+    
+}
+.theme-date{
+    font-size: 17px;
+}
+.theme-vacancies{
+    font-size: 13px;
+    margin-bottom: 5px;
 }
